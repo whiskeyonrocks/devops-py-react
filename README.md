@@ -35,27 +35,27 @@ For development purposes, you can use the --scale option to run multiple instanc
 
 ## OTHER INFO
 ### Folder Structure:
-.
-├── README.md
-├── docker-compose.yml
-└── webapp
-    ├── Dockerfile
-    ├── app.py
-    └── templates
-        ├── README.md
-        ├── index.html
-        ├── package.json
-        ├── public
-        │   └── vite.svg
-        ├── src
-        │   ├── App.css
-        │   ├── App.jsx
-        │   ├── assets
-        │   │   └── react.svg
-        │   ├── index.css
-        │   └── main.jsx
-        └── vite.config.js
-
+```.
+   ├── README.md
+   ├── docker-compose.yml
+   └── webapp
+       ├── Dockerfile
+       ├── app.py
+       └── templates
+           ├── README.md
+           ├── index.html
+           ├── package.json
+           ├── public
+           │   └── vite.svg
+           ├── src
+           │   ├── App.css
+           │   ├── App.jsx
+           │   ├── assets
+           │   │   └── react.svg
+           │   ├── index.css
+           │   └── main.jsx
+           └── vite.config.js
+```
 ### Docker Configuration:
 
 - **React App Build (Node as Builder):**
