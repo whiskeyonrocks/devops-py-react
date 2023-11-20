@@ -8,8 +8,7 @@ Keep the Docker running.
 
 ## Setup Steps:
 Clone the Repository:
-git clone repo-url 
-cd Docker-React
+git clone [docker-react](https://github.com/whiskeyonrocks/docker-react) && cd docker-react
 
 ## Running the Application:
 
