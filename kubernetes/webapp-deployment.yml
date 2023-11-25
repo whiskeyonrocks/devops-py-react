@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapp2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webapp2
+  template:
+    metadata:
+      labels:
+        app: webapp2
+    spec:
+      containers:
+      - name: webapp2
+        image: whiskeyonrocks/docker-react:4.0
+        ports:
+        - containerPort: 80
+        env:
+        - name: FLASK_APP
+          value: "app.py"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: webapp2
+spec:
+  selector:
+    app: webapp2
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+  type: NodePort

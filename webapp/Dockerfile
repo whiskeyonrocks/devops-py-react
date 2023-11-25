@@ -36,9 +36,9 @@ RUN pip install Flask redis
 ENV FLASK_APP=app.py
 
 # Expose port 5000 for the web service
-EXPOSE 5000
+EXPOSE 80
 
 # CMD ["/bin/bash"]
 
 # Define a command that starts the Flask application server
-CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
+CMD ["flask", "run", "--host=0.0.0.0", "--port=80"]
