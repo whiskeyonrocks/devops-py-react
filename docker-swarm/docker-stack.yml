@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  webapp:
+    image: whiskeyonrocks/docker-react:5.0
+    ports:
+      - "80:80"
+    depends_on:
+      - redis
+    environment:
+      - FLASK_APP=app.py
+
+  redis:
+    image: "redis:latest"
