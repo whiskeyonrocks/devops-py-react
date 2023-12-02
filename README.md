@@ -85,6 +85,7 @@ For development purposes, you can use the --scale option to run multiple instanc
   - RUN Below commands to build, push, init and run docker swarm.
   - chmod +x docker-swarm-deployment.sh
   - ./docker-swarm-deployment.sh 
+  - To stop and remove deployment `docker stack rm webapp_stack`
 
 ### Kubernetes deployment
 

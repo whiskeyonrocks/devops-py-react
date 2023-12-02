@@ -16,7 +16,7 @@ fi
 
 # Set the desired image name and tag
 IMAGE_NAME="docker-react"
-IMAGE_TAG="4.0"
+IMAGE_TAG="5.0"
 DOCKERFILE_PATH="./webapp"
 CLUSTER_APP_NAME="webapp2"
 

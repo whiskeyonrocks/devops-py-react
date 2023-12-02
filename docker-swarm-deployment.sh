@@ -40,3 +40,5 @@ docker stack deploy -c docker-swarm/docker-stack.yml webapp_stack
 
 # Open the web browser at the specified port
 open "http://localhost:80"
+
+# docker stack rm webapp_stack       
